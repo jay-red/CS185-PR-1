@@ -1,0 +1,39 @@
+body, html {
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 100vw;
+}
+
+.navbar-item {
+	float: left;
+	font-size: 18px;
+	margin: -9px 2px 0px 2px;
+	padding: 25px 10px 18px 10px;
+	width: 75px;
+	color: white;
+	text-align: center;
+}
+
+.navbar-item:hover, .highlighted {
+	background-color: #0059B4;
+	border-radius: 5px;
+}
+
+#header {
+	width: 100%;
+}
+
+#content {
+	margin-top: 65px;
+}
+
+#navbar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #003994;
+	height: 50px;
+	width: 100%;
+}

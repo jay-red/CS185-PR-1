@@ -1,0 +1,15 @@
+#gallery {
+	width: 100%;
+}
+
+.gallery-item {
+	float: left;
+	margin: 10px;
+	width: 400px;
+	height: 400px;
+}
+
+video {
+	width: 100%;
+	height: auto;
+}
