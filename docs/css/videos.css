@@ -2,6 +2,39 @@
 	width: 100%;
 }
 
+#lightbox-background, #lightbox-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+#lightbox-overlay {
+	z-index: 10419;
+}
+
+#lightbox-background {
+	background: #000000;
+	opacity: 0.9;
+	z-index: 410;
+}
+
+#lightbox-item {
+	position: relative;
+	background: #050505;
+	width: 90vw;
+	height: 90vh;
+	top: 5vh;
+	left: 5vw;
+}
+
+.lightbox-item {
+	width: 100%;
+	height: 100%;
+	background-size: contain;
+}
+
 .gallery-item {
 	float: left;
 	margin: 10px;
@@ -11,5 +44,37 @@
 
 video {
 	width: 100%;
+	max-width: 90vw;
+	max-height: 90vh;
 	height: auto;
+	cursor: pointer;
+}
+
+.gallery-item video {
+	height: 100%;
+}
+
+#scroll-button {
+	background: #003994;
+	color: white;
+	position: fixed;
+	z-index: 360;
+	font-size: 20px;
+	padding: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+@media ( orientation: landscape ) {
+	#scroll-button {
+		right: 6vh;
+		bottom: 6vh;
+	}
+}
+
+@media ( orientation: portrait ) {
+	#scroll-button {
+		right: 6vw;
+		bottom: 6vw;
+	}
 }

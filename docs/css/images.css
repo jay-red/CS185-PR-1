@@ -2,58 +2,127 @@
 	width: 100%;
 }
 
-.gallery-item {
-	float: left;
-	margin: 10px;
-	width: 200px;
-	height: 200px;
+#lightbox-background, #lightbox-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+#lightbox-background {
+	background: #000000;
+	opacity: 0.9;
+}
+
+#lightbox-item {
+	position: relative;
+	background: #050505;
+}
+
+@media ( orientation: landscape ) {
+	#lightbox-item {
+		width: 90vh;
+		height: 90vh;
+		top: 5vh;
+		margin: auto;
+	}
+}
+
+@media ( orientation: portrait ) {
+	#lightbox-item {
+		width: 90vw;
+		height: 90vw;
+		top: 50vh;
+		margin-top: -45vw;
+		left: 5vw;
+	}
+}
+
+.lightbox-item {
+	width: 100%;
+	height: 100%;
 	background-size: contain;
 }
 
-#item-1 {
+.gallery-item {
+	float: left;
+	margin: 10px;
+	width: 400px;
+	height: 400px;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.item-1 {
 	background-image: url( "../assets/1.png" );
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-#item-2 {
+.item-2 {
 	background-image: url( "../assets/2.png" );
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-#item-3 {
+.item-3 {
 	background-image: url( "../assets/3.png" );
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-#item-4 {
+.item-4 {
 	background-image: url( "../assets/4.png" );
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-#item-5 {
+.item-5 {
 	background-image: url( "../assets/5.png" );
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-#item-6 {
+.item-6 {
 	background-image: url( "../assets/6.png" );
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-#item-7 {
+.item-7 {
 	background-image: url( "../assets/7.png" );
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-#item-8 {
+.item-8 {
 	background-image: url( "../assets/8.png" );
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+#scroll-button {
+	background: #003994;
+	color: white;
+	position: fixed;
+	z-index: 360;
+	font-size: 20px;
+	padding: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+@media ( orientation: landscape ) {
+	#scroll-button {
+		right: 6vh;
+		bottom: 6vh;
+	}
+}
+
+@media ( orientation: portrait ) {
+	#scroll-button {
+		right: 6vw;
+		bottom: 6vw;
+	}
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CS 185 | Email Validation</title>
+		<link rel="stylesheet" type="text/css" href="./css/global.css" />
+		<link rel="stylesheet" type="text/css" href="./css/email.css" />
+	</head>
+	<body>
+		<div id="navbar">
+			<a href="./index.html">
+				<div class="navbar-item">
+					Home
+				</div>
+			</a>
+			<a href="./text.html">
+				<div class="navbar-item">
+					Text
+				</div>
+			</a>
+			<a href="./images.html">
+				<div class="navbar-item">
+					Images
+				</div>
+			</a>
+			<a href="./videos.html">
+				<div class="navbar-item">
+					Videos
+				</div>
+			</a>
+			<a href="./table.html">
+				<div class="navbar-item">
+					Table
+				</div>
+			</a>
+			<a href="./email.html">
+				<div class="navbar-item highlighted">
+					Email
+				</div>
+			</a>
+		</div>
+		<div id="content">
+			<h1>Email Validator</h1>
+			<form method="GET" action="./text.html" id="email-form">
+				<label>
+					Email
+					<br/>
+					<input type="text" name="email" id="email" placeholder="Email address..." />
+				</label>
+				<br/>
+				<br/>
+				<input type="submit" value="Validate" />
+			</form>
+			<br/>
+			<div id="message-box" class="hide"></div>
+			<script src="./js/email.js"></script>
+		</div>
+	</body>
+</html>
